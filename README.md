@@ -50,6 +50,12 @@ algo-crepes/
 ├── LICENSE                     # Licence MIT
 └── .gitignore                  # Fichiers à ignorer
 ```
+## 📖 Principes
+
+A partir d'une [docs/Contexte.pdf](recette de pâte à crêpes), création d'un [src/algo-crepes-original.js](fichier Javascript basique) avec [docs/demo.mp4](enregistrement vidéo) en accéléré pour visualiser en quoi consiste le développement.
+
+<img src="./docs/demo.gif" alt="Démonstration de la création du fichier Javascript de Crêpes" width="200"/>
+
 
 ## 🚀 Installation & Utilisation
 
@@ -66,7 +72,7 @@ http://votre-domaine.com/algo-crepes/demo/
 
 **C'est tout !** Pas de configuration, pas de commande, ça marche directement.
 
-## 💻 Utiliser le Code JavaScript
+## 💻 Utiliser le code JavaScript
 
 ### Dans une page HTML
 
@@ -120,7 +126,7 @@ await recipe.loadTranslations('fr');
 recipe.makeCrepes();
 ```
 
-## 🎓 Concepts Pédagogiques Illustrés
+## 🎓 Concepts pédagogiques illustrés
 
 ### 1. Variables et Types
 ```javascript
@@ -162,7 +168,7 @@ class CrepesRecipe {
 }
 ```
 
-### 6. Programmation Asynchrone
+### 6. Programmation asynchrone
 ```javascript
 async loadTranslations(lang) {
     const response = await fetch(`data/translations/${lang}.json`);
@@ -170,7 +176,7 @@ async loadTranslations(lang) {
 }
 ```
 
-## 🌍 Support Multilingue
+## 🌍 Support multilingue
 
 Le projet supporte :
 - 🇫🇷 Français
@@ -192,7 +198,7 @@ Le projet supporte :
 new CrepesRecipe(lang = 'fr')
 ```
 
-#### Méthodes Principales
+#### Méthodes principales
 ```javascript
 // Charger les traductions
 await recipe.loadTranslations('fr')
@@ -255,7 +261,11 @@ Les contributions sont bienvenues !
 
 ## 📄 Licence
 
-MIT License - voir [LICENSE](LICENSE)
+Creative Commons BY NC SA - voir [LICENSE.md](LICENSE)
+
+## 🩼 AI
+
+Utilisation de [https://claude.ai/](ClaudeAI) pour la génération du fichier `index.html` de démo
 
 ## 🆘 Support
 
