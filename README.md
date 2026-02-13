@@ -53,7 +53,7 @@ algo-crepes/
 │   └── CONCEPTS.md               # Concepts pédagogiques
 │
 ├── README.md                   # Ce fichier
-├── LICENSE                     # Licence MIT
+├── LICENSE                     # Licence
 └── .gitignore                  # Fichiers à ignorer
 ```
 
