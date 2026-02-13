@@ -9,6 +9,12 @@
 
 Un projet pédagogique pour expliquer la programmation aux non-développeurs à travers une recette de crêpes.
 
+## 📖 Principes
+
+A partir d'une [docs/Contexte.pdf](recette de pâte à crêpes), création d'un [src/algo-crepes-original.js](fichier Javascript basique) avec [docs/demo.mp4](enregistrement vidéo) en accéléré pour visualiser en quoi consiste le développement.
+
+<img src="./docs/demo.gif" alt="Démonstration de la création du fichier Javascript de Crêpes" />
+
 **100% JavaScript** - Aucun PHP, juste du JS pur et une interface HTML pour la démo !
 
 ## 🎯 Philosophie du Projet
@@ -50,12 +56,6 @@ algo-crepes/
 ├── LICENSE                     # Licence MIT
 └── .gitignore                  # Fichiers à ignorer
 ```
-## 📖 Principes
-
-A partir d'une [docs/Contexte.pdf](recette de pâte à crêpes), création d'un [src/algo-crepes-original.js](fichier Javascript basique) avec [docs/demo.mp4](enregistrement vidéo) en accéléré pour visualiser en quoi consiste le développement.
-
-<img src="./docs/demo.gif" alt="Démonstration de la création du fichier Javascript de Crêpes" width="200"/>
-
 
 ## 🚀 Installation & Utilisation
 
