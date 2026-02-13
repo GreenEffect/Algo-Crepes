@@ -1,4 +1,4 @@
-# 🔐 Politique de sécurité
+﻿# 🔐 Politique de sécurité
 
 Le projet étant pédagogique et sans backend, les risques sont limités.
 

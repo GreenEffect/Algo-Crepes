@@ -1,4 +1,4 @@
-# ❓ FAQ
+﻿# ✅ FAQ
 
 ## Pourquoi pas npm ?
 Pour rester accessible aux débutants.

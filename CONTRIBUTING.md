@@ -1,4 +1,4 @@
-# 🤝 Contribuer à Algo-Crêpes
+﻿# 🤝 Contribuer à Algo-Crêpes
 
 Merci de ton intérêt pour le projet 🥞
 

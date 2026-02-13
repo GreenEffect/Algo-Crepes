@@ -1,4 +1,4 @@
-# 🎓 Intentions pédagogiques
+﻿# 🎓 Intentions pédagogiques
 
 Algo-Crêpes sert à introduire la programmation via une métaphore connue.
 
@@ -16,16 +16,16 @@ Algo-Crêpes sert à introduire la programmation via une métaphore connue.
 
 - non développeurs
 - étudiants débutants
-- profils reconversion
+- profils en reconversion
 
 ## Philosophie
 
 On accepte :
-✔ répétition  
-✔ verbosité  
-✔ simplification  
+✅ répétition
+✅ verbosité
+✅ simplification
 
 On évite :
-✘ patterns avancés  
-✘ magie implicite  
-✘ dépendances
+❌ patterns avancés
+❌ magie implicite
+❌ dépendances

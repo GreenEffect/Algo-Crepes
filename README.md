@@ -1,4 +1,4 @@
-# 🥞 Algo-Crêpes
+﻿# 🥞 Algo-Crêpes
 
 ![Licence](https://img.shields.io/badge/licence-CC%20BY--NC--SA%204.0-lightgrey)
 ![Statut](https://img.shields.io/badge/statut-projet%20p%C3%A9dagogique-blue)
