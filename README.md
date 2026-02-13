@@ -30,7 +30,7 @@ A partir d'une [recette de pâte à crêpes](./docs/Contexte.pdf), création d'u
 ```
 algo-crepes/
 ├── src/                        # Code source JavaScript
-│   ├── algo-crepes-original.js    # Votre code initial
+│   ├── algo-crepes-original.js    # Code initial (celui de l'enregistrement)
 │   └── algo-crepes.js             # Version améliorée (classe)
 │
 ├── demo/                       # Interface de démo
@@ -265,7 +265,7 @@ Creative Commons BY NC SA - voir [LICENSE.md](LICENSE.md)
 
 ## 🩼 AI
 
-Utilisation de [ClaudeAI](https://claude.ai/) pour la génération du fichier `index.html` de démo
+Utilisation de [ClaudeAI](https://claude.ai/) pour la génération de l'arborescence du projet et du fichier `index.html` de démo
 
 ## 🆘 Support
 
