@@ -1,4 +1,4 @@
-# 🧱 Architecture du projet
+﻿# 🧱 Architecture du projet
 
 ## Vue d’ensemble
 
@@ -19,8 +19,8 @@ Permettre de comprendre :
 
 ## Diagramme simplifié
 
-Interface → appelle → CrepesRecipe  
-CrepesRecipe → charge → traductions  
+Interface → appelle → CrepesRecipe
+CrepesRecipe → charge → traductions
 CrepesRecipe → produit → logs / statut
 
 ## Pourquoi sans build ?

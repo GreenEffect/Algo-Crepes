@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Algo-Crêpes - Version Browser
  * Version améliorée du code original, compatible navigateur
  */
@@ -8,10 +8,10 @@ class CrepesRecipe {
         this.lang = lang;
         this.translations = null;
         this.logs = [];
-        
+
         // Ordre de traitement des ingrédients
         this.order = ['farine', 'sel', 'sucre', 'oeuf', 'beurre', 'lait'];
-        
+
         // Configuration de la recette
         this.recipe = {
             'farine': { required: true, amount: 375, unit: 'gramme' },
@@ -21,7 +21,7 @@ class CrepesRecipe {
             'sel': { required: false, amount: 2, unit: 'pincee' },
             'oeuf': { required: true, amount: 6, unit: 'unite' }
         };
-        
+
         // Ingrédients disponibles (initialisés aux valeurs parfaites)
         this.availableIngredients = {
             'farine': 375,
@@ -32,7 +32,7 @@ class CrepesRecipe {
             'oeuf': 6
         };
     }
-    
+
     /**
      * Charge les traductions depuis un fichier JSON
      */
@@ -46,7 +46,7 @@ class CrepesRecipe {
             this.translations = this.getDefaultTranslations();
         }
     }
-    
+
     /**
      * Traductions par défaut (français)
      */
@@ -58,7 +58,7 @@ class CrepesRecipe {
                 "cuisson": "On fait cuire les crêpes.",
                 "trop": "(Vous en avez mis ## en trop)",
                 "pas_assez": "(Il vous en manque ##)",
-                "pbs_oeuf": "Problème de quantité d'œufs, pas de crêpes !",
+                "pbs_oeuf": "Problème de quantité d’œufs, pas de crêpes !",
                 "pbs_lait": "Problème de quantité de lait, pas de crêpes !",
                 "pbs_farine": "Problème de quantité de farine, pas de crêpes !",
                 "pbs_sel": "Problème de quantité de sel ! On croise les doigts pour que ce ne soit pas trop beurk !",
@@ -83,7 +83,7 @@ class CrepesRecipe {
             }
         };
     }
-    
+
     /**
      * Obtient un message traduit
      */
@@ -93,7 +93,7 @@ class CrepesRecipe {
         }
         return this.translations.messages[key] || key;
     }
-    
+
     /**
      * Obtient l'unité traduite avec pluralisation
      */
@@ -101,13 +101,13 @@ class CrepesRecipe {
         if (!this.translations || !this.translations.units) {
             return unit;
         }
-        
+
         const singular = this.translations.units[unit] || unit;
         const plural = this.translations.units[unit + 's'] || singular + 's';
-        
+
         return amount > 1 ? plural : singular;
     }
-    
+
     /**
      * Définit la quantité d'un ingrédient disponible
      */
@@ -118,7 +118,7 @@ class CrepesRecipe {
         }
         return false;
     }
-    
+
     /**
      * Vérifie si un ingrédient correspond aux besoins
      */
@@ -126,10 +126,10 @@ class CrepesRecipe {
         if (!this.recipe.hasOwnProperty(ingredient)) {
             return 'unknown';
         }
-        
+
         const needed = this.recipe[ingredient].amount;
         const available = this.availableIngredients[ingredient];
-        
+
         if (available === needed) {
             return 'perfect';
         } else if (available < needed) {
@@ -138,7 +138,7 @@ class CrepesRecipe {
             return 'excess';
         }
     }
-    
+
     /**
      * Génère le message d'erreur pour un ingrédient
      */
@@ -147,60 +147,60 @@ class CrepesRecipe {
         if (status === 'perfect') {
             return null;
         }
-        
+
         const needed = this.recipe[ingredient].amount;
         const available = this.availableIngredients[ingredient];
         const diff = Math.abs(available - needed);
         const unit = this.getUnit(this.recipe[ingredient].unit, diff);
-        
+
         let problemMsg = this.t(`pbs_${ingredient}`);
         let diffMsg;
-        
+
         if (status === 'excess') {
             diffMsg = this.t('trop');
         } else {
             diffMsg = this.t('pas_assez');
         }
-        
+
         diffMsg = diffMsg.replace('##', `${diff} ${unit}`);
-        
+
         return `${problemMsg} ${diffMsg}`;
     }
-    
+
     /**
      * Ajoute un message au log
      */
     log(message) {
         this.logs.push(message);
     }
-    
+
     /**
      * Réinitialise les logs
      */
     clearLogs() {
         this.logs = [];
     }
-    
+
     /**
      * Obtient tous les logs
      */
     getLogs() {
         return this.logs;
     }
-    
+
     /**
      * Prépare les crêpes selon la recette
      */
     makeCrepes() {
         this.clearLogs();
         this.log(this.t('depart'));
-        
+
         let success = true;
-        
+
         // Vérification de tous les ingrédients dans l'ordre
         for (const ingredient of this.order) {
             const status = this.checkIngredient(ingredient);
-            
+
             if (status === 'perfect') {
                 // Quantité parfaite
                 this.log(this.t(`ajout_${ingredient}`));
@@ -208,7 +208,7 @@ class CrepesRecipe {
                 // Problème de quantité
                 const problemMsg = this.getIngredientProblemMessage(ingredient);
                 this.log(problemMsg);
-                
+
                 // Si l'ingrédient est requis, on arrête
                 if (this.recipe[ingredient].required) {
                     success = false;
@@ -216,16 +216,16 @@ class CrepesRecipe {
                 }
             }
         }
-        
+
         // Résultat final
         if (success) {
             this.log(this.t('cuisson'));
             this.log(this.t('miam'));
         }
-        
+
         return success;
     }
-    
+
     /**
      * Réinitialise tous les ingrédients aux valeurs parfaites
      */
@@ -240,13 +240,13 @@ class CrepesRecipe {
         };
         this.clearLogs();
     }
-    
+
     /**
      * Obtient un résumé de l'état actuel
      */
     getStatus() {
         const status = {};
-        
+
         for (const ingredient of this.order) {
             status[ingredient] = {
                 name: ingredient,
@@ -257,7 +257,7 @@ class CrepesRecipe {
                 status: this.checkIngredient(ingredient)
             };
         }
-        
+
         return status;
     }
 }

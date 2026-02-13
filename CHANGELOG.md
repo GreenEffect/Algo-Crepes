@@ -1,11 +1,18 @@
-# Changelog
+﻿# Code de conduite
 
-## [2.0]
+Nous voulons un environnement bienveillant, pédagogique et inclusif.
 
-- Passage en classe JavaScript
-- Ajout support multilingue
-- Séparation src / demo
+## Attendus
 
-## [1.0]
+- Respect
+- Patience envers les débutants
+- Explications constructives
+- Pas de mépris technique
 
-- Version procédurale initiale
+## Inacceptables
+
+- Harcèlement
+- Moqueries sur le niveau
+- Attitudes élitistes
+
+Tout comportement problématique peut être signalé aux mainteneurs.
