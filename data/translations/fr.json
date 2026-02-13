@@ -1,0 +1,42 @@
+{
+  "language": "Français",
+  "messages": {
+    "miam": "À table !",
+    "depart": "C'est parti pour les crêpes !",
+    "cuisson": "On fait cuire les crêpes.",
+    "trop": "(Vous en avez mis ## en trop)",
+    "pas_assez": "(Il vous en manque ##)",
+    "pbs_oeuf": "Problème de quantité d'œufs, pas de crêpes !",
+    "pbs_lait": "Problème de quantité de lait, pas de crêpes !",
+    "pbs_farine": "Problème de quantité de farine, pas de crêpes !",
+    "pbs_sel": "Problème de quantité de sel ! On croise les doigts pour que ce ne soit pas trop beurk !",
+    "pbs_sucre": "Problème de quantité de sucre, ce sera moins bon...",
+    "pbs_beurre": "Problème de quantité de beurre, ce sera moins bon...",
+    "ajout_farine": "On ajoute la farine.",
+    "ajout_sel": "On ajoute le sel.",
+    "ajout_sucre": "On ajoute le sucre.",
+    "ajout_oeuf": "On ajoute les œufs.",
+    "ajout_beurre": "On fait fondre le beurre et on ajoute ça à la préparation.",
+    "ajout_lait": "On ajoute le lait.",
+    "success": "Succès ! Les crêpes sont prêtes !",
+    "failure": "Échec ! Impossible de faire les crêpes."
+  },
+  "units": {
+    "gramme": "gramme",
+    "grammes": "grammes",
+    "litre": "litre",
+    "litres": "litres",
+    "pincee": "pincée",
+    "pincees": "pincées",
+    "unite": "unité",
+    "unites": "unités"
+  },
+  "ingredients": {
+    "farine": "farine",
+    "sel": "sel",
+    "sucre": "sucre",
+    "oeuf": "œufs",
+    "beurre": "beurre",
+    "lait": "lait"
+  }
+}

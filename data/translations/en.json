@@ -1,0 +1,42 @@
+{
+  "language": "English",
+  "messages": {
+    "miam": "Let's eat!",
+    "depart": "Let's make some crepes!",
+    "cuisson": "We're cooking the crepes.",
+    "trop": "(You have ## too much)",
+    "pas_assez": "(You need ## more)",
+    "pbs_oeuf": "Egg quantity problem, no crepes!",
+    "pbs_lait": "Milk quantity problem, no crepes!",
+    "pbs_farine": "Flour quantity problem, no crepes!",
+    "pbs_sel": "Salt quantity problem! Let's hope it's not too bad!",
+    "pbs_sucre": "Sugar quantity problem, they'll be less tasty...",
+    "pbs_beurre": "Butter quantity problem, they'll be less tasty...",
+    "ajout_farine": "Adding the flour.",
+    "ajout_sel": "Adding the salt.",
+    "ajout_sucre": "Adding the sugar.",
+    "ajout_oeuf": "Adding the eggs.",
+    "ajout_beurre": "Melting the butter and adding it to the mixture.",
+    "ajout_lait": "Adding the milk.",
+    "success": "Success! The crepes are ready!",
+    "failure": "Failure! Cannot make crepes."
+  },
+  "units": {
+    "gramme": "gram",
+    "grammes": "grams",
+    "litre": "liter",
+    "litres": "liters",
+    "pincee": "pinch",
+    "pincees": "pinches",
+    "unite": "unit",
+    "unites": "units"
+  },
+  "ingredients": {
+    "farine": "flour",
+    "sel": "salt",
+    "sucre": "sugar",
+    "oeuf": "eggs",
+    "beurre": "butter",
+    "lait": "milk"
+  }
+}

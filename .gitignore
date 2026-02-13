@@ -1,0 +1,24 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Temporaire
+tmp/
+temp/
+*.tmp
+
+# Aucune dépendance npm dans ce projet !
+# node_modules/
+# package-lock.json

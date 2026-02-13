@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🥞 Algo-Crêpes - Démo Interactive</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- En-tête -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">🥞 Algo-Crêpes</h1>
+                <p class="subtitle">Apprendre la programmation en cuisinant</p>
+            </div>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="fr">🇫🇷 Français</button>
+                <button class="lang-btn" data-lang="en">🇬🇧 English</button>
+            </div>
+        </header>
+
+        <!-- Section principale -->
+        <main class="main-content">
+            <!-- Panneau de contrôle des ingrédients -->
+            <section class="ingredients-panel">
+                <h2>📦 Ingrédients disponibles</h2>
+                <p class="instructions">Ajustez les quantités pour voir ce qui se passe !</p>
+                
+                <div class="ingredients-grid">
+                    <!-- Farine -->
+                    <div class="ingredient-card" data-ingredient="farine">
+                        <div class="ingredient-header">
+                            <span class="ingredient-icon">🌾</span>
+                            <span class="ingredient-name">Farine</span>
+                            <span class="required-badge">Requis</span>
+                        </div>
+                        <div class="ingredient-controls">
+                            <button class="btn-decrease" data-ingredient="farine">−</button>
+                            <input type="number" class="ingredient-input" data-ingredient="farine" value="375" min="0" step="25">
+                            <button class="btn-increase" data-ingredient="farine">+</button>
+                        </div>
+                        <div class="ingredient-info">
+                            <span class="needed">Besoin: 375g</span>
+                            <span class="status-indicator" data-status="perfect">✓</span>
+                        </div>
+                    </div>
+
+                    <!-- Sel -->
+                    <div class="ingredient-card" data-ingredient="sel">
+                        <div class="ingredient-header">
+                            <span class="ingredient-icon">🧂</span>
+                            <span class="ingredient-name">Sel</span>
+                            <span class="optional-badge">Optionnel</span>
+                        </div>
+                        <div class="ingredient-controls">
+                            <button class="btn-decrease" data-ingredient="sel">−</button>
+                            <input type="number" class="ingredient-input" data-ingredient="sel" value="2" min="0" step="1">
+                            <button class="btn-increase" data-ingredient="sel">+</button>
+                        </div>
+                        <div class="ingredient-info">
+                            <span class="needed">Besoin: 2 pincées</span>
+                            <span class="status-indicator" data-status="perfect">✓</span>
+                        </div>
+                    </div>
+
+                    <!-- Sucre -->
+                    <div class="ingredient-card" data-ingredient="sucre">
+                        <div class="ingredient-header">
+                            <span class="ingredient-icon">🍚</span>
+                            <span class="ingredient-name">Sucre</span>
+                            <span class="optional-badge">Optionnel</span>
+                        </div>
+                        <div class="ingredient-controls">
+                            <button class="btn-decrease" data-ingredient="sucre">−</button>
+                            <input type="number" class="ingredient-input" data-ingredient="sucre" value="75" min="0" step="25">
+                            <button class="btn-increase" data-ingredient="sucre">+</button>
+                        </div>
+                        <div class="ingredient-info">
+                            <span class="needed">Besoin: 75g</span>
+                            <span class="status-indicator" data-status="perfect">✓</span>
+                        </div>
+                    </div>
+
+                    <!-- Œufs -->
+                    <div class="ingredient-card" data-ingredient="oeuf">
+                        <div class="ingredient-header">
+                            <span class="ingredient-icon">🥚</span>
+                            <span class="ingredient-name">Œufs</span>
+                            <span class="required-badge">Requis</span>
+                        </div>
+                        <div class="ingredient-controls">
+                            <button class="btn-decrease" data-ingredient="oeuf">−</button>
+                            <input type="number" class="ingredient-input" data-ingredient="oeuf" value="6" min="0" step="1">
+                            <button class="btn-increase" data-ingredient="oeuf">+</button>
+                        </div>
+                        <div class="ingredient-info">
+                            <span class="needed">Besoin: 6 unités</span>
+                            <span class="status-indicator" data-status="perfect">✓</span>
+                        </div>
+                    </div>
+
+                    <!-- Beurre -->
+                    <div class="ingredient-card" data-ingredient="beurre">
+                        <div class="ingredient-header">
+                            <span class="ingredient-icon">🧈</span>
+                            <span class="ingredient-name">Beurre</span>
+                            <span class="optional-badge">Optionnel</span>
+                        </div>
+                        <div class="ingredient-controls">
+                            <button class="btn-decrease" data-ingredient="beurre">−</button>
+                            <input type="number" class="ingredient-input" data-ingredient="beurre" value="90" min="0" step="10">
+                            <button class="btn-increase" data-ingredient="beurre">+</button>
+                        </div>
+                        <div class="ingredient-info">
+                            <span class="needed">Besoin: 90g</span>
+                            <span class="status-indicator" data-status="perfect">✓</span>
+                        </div>
+                    </div>
+
+                    <!-- Lait -->
+                    <div class="ingredient-card" data-ingredient="lait">
+                        <div class="ingredient-header">
+                            <span class="ingredient-icon">🥛</span>
+                            <span class="ingredient-name">Lait</span>
+                            <span class="required-badge">Requis</span>
+                        </div>
+                        <div class="ingredient-controls">
+                            <button class="btn-decrease" data-ingredient="lait">−</button>
+                            <input type="number" class="ingredient-input" data-ingredient="lait" value="1" min="0" step="0.1">
+                            <button class="btn-increase" data-ingredient="lait">+</button>
+                        </div>
+                        <div class="ingredient-info">
+                            <span class="needed">Besoin: 1L</span>
+                            <span class="status-indicator" data-status="perfect">✓</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn btn-primary" id="makeCrepes">
+                        🍳 Faire les crêpes !
+                    </button>
+                    <button class="btn btn-secondary" id="resetRecipe">
+                        🔄 Réinitialiser
+                    </button>
+                </div>
+            </section>
+
+            <!-- Panneau de résultats -->
+            <section class="results-panel">
+                <h2>📝 Journal de préparation</h2>
+                <div class="result-status" id="resultStatus">
+                    <div class="status-icon">⏳</div>
+                    <p>Prêt à commencer !</p>
+                </div>
+                
+                <div class="logs-container" id="logsContainer">
+                    <div class="log-placeholder">
+                        Ajustez les ingrédients et cliquez sur "Faire les crêpes !" pour voir le processus.
+                    </div>
+                </div>
+
+                <!-- Concepts pédagogiques -->
+                <div class="educational-box">
+                    <h3>💡 Concepts illustrés</h3>
+                    <div class="concepts-grid">
+                        <div class="concept">
+                            <strong>Variables</strong>
+                            <p>Les ingrédients et leurs quantités</p>
+                        </div>
+                        <div class="concept">
+                            <strong>Conditions</strong>
+                            <p>Si pas assez d'œufs → pas de crêpes</p>
+                        </div>
+                        <div class="concept">
+                            <strong>Boucles</strong>
+                            <p>Vérifier chaque ingrédient un par un</p>
+                        </div>
+                        <div class="concept">
+                            <strong>Fonctions</strong>
+                            <p>Chaque étape est une fonction</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Pied de page -->
+        <footer class="footer">
+            <p>
+                Projet pédagogique pour découvrir la programmation 💻
+                <br>
+                <a href="../src/algo-crepes.js" target="_blank">Voir le code source JS</a>
+            </p>
+        </footer>
+    </div>
+
+    <!-- Scripts - UNIQUEMENT du JavaScript -->
+    <script src="../src/algo-crepes.js"></script>
+    <script src="../assets/js/demo.js"></script>
+</body>
+</html>

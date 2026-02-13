@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algo-Crêpes - Accueil</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 60px;
+            max-width: 800px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            color: #6c757d;
+            margin-bottom: 40px;
+        }
+        
+        .description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #495057;
+            margin-bottom: 40px;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-weight: 600;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+        
+        .features {
+            margin-top: 60px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: left;
+        }
+        
+        .feature {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .feature-title {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+        
+        .feature-desc {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #dee2e6;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🥞 Algo-Crêpes</h1>
+        <p class="tagline">Apprendre la programmation en cuisinant</p>
+        
+        <p class="description">
+            Un projet pédagogique pour expliquer les concepts de programmation
+            (variables, conditions, boucles, fonctions) à travers une recette de crêpes.
+            <br><br>
+            <strong>100% JavaScript</strong> - Code propre, interface interactive, et compatible avec votre serveur LAMP !
+        </p>
+        
+        <div class="cta-buttons">
+            <a href="demo/index.html" class="btn btn-primary">
+                🍳 Voir la Démo
+            </a>
+            <a href="src/algo-crepes.js" class="btn btn-secondary">
+                💻 Voir le Code
+            </a>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">✨</div>
+                <div class="feature-title">Pur JavaScript</div>
+                <div class="feature-desc">Aucune dépendance, code simple et lisible</div>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">🌐</div>
+                <div class="feature-title">Compatible LAMP</div>
+                <div class="feature-desc">Uploadez et ça marche sur Apache</div>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">🌍</div>
+                <div class="feature-title">Multilingue</div>
+                <div class="feature-desc">Français et Anglais inclus</div>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">🎓</div>
+                <div class="feature-title">Pédagogique</div>
+                <div class="feature-desc">Concepts illustrés clairement</div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>
+                📖 <a href="README.md" style="color: #667eea;">Lire la documentation</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                🐛 <a href="https://github.com" style="color: #667eea;">Signaler un bug</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                ⭐ <a href="https://github.com" style="color: #667eea;">Star sur GitHub</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
