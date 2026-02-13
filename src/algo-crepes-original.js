@@ -1,14 +1,14 @@
-﻿//~ Ordre dans lequel les ingrédients seront traités
+﻿// Ordre dans lequel les ingrédients seront traités
 const _ordre = [
     'farine', 'sel', 'sucre', 'oeuf', 'beurre', 'lait'
 ];
 
-//~ Ingrédients et leur quantité nécessaires à la recette
+// Ingrédients et leur quantité nécessaires à la recette
 const _ingredients_recette = {
     'farine': {
-        'stop': true,          //~ si pas la valeur, on arrête ou pas la recette ?
-        'valeur': 375,         //~ valeur requise
-        'unite': 'gramme',     //~ unité de valeur
+        'stop': true,          // si pas la valeur, on arrête ou pas la recette ?
+        'valeur': 375,         // valeur requise
+        'unite': 'gramme',     // unité de valeur
     },
     'sucre': {
         'stop': false,
@@ -37,7 +37,7 @@ const _ingredients_recette = {
     },
 };
 
-//~ Quantité sous la main des ingrédients nécessaires à la réalisation de la recette
+// Quantité sous la main des ingrédients nécessaires à la réalisation de la recette
 const _ingredients_sous_la_main = {
     'farine': 375,
     'sucre': 75,
@@ -47,7 +47,7 @@ const _ingredients_sous_la_main = {
     'oeuf': 6,
 };
 
-//~ Si, à terme, on veut gérer du multilingue, Cf lang
+// Si, à terme, on veut gérer du multilingue, Cf lang
 const _labels = {
     'FR': {
         'miam': 'À table !',
@@ -70,7 +70,7 @@ const _labels = {
     },
 };
 
-//~ Si, à terme, on veut gérer du multilingue, Cf _labels
+// Si, à terme, on veut gérer du multilingue, Cf _labels
 const lang = 'FR';
 
 /**
@@ -130,27 +130,27 @@ function verifier_fin_recette(ingredient) {
  * @return {boolean} Définit la réussite de la recette
  */
 function faire_des_crepes() {
-    //~ Let's go !
+    // Let's go !
     console.log(_labels[lang].depart);
 
-    //~ On vérifie tous les ingrédients
+    // On vérifie tous les ingrédients
     let tout_est_ok = _ordre.every(function(ingredient) {
-        //~ La quantité d'un ingrédient ne convient pas
+        // La quantité d'un ingrédient ne convient pas
         if (!verifier_ingredient(ingredient)) {
             console.log(
                 retourne_chaine_probleme(ingredient)
             );
 
-            //~ Si l'ingrédient est essentiel, on indique l'arrêt du traitement
+            // Si l'ingrédient est essentiel, on indique l'arrêt du traitement
             return !(verifier_fin_recette(ingredient));
         } else {
-            //~ La quantité correspond à la recette
+            // La quantité correspond à la recette
             console.log(_labels[lang]['ajout_' + ingredient]);
             return true;
         }
     });
 
-    //~ Si aucun problème d'ingrédient n'a été détecté, on passe à la cuisson et miam !
+    // Si aucun problème d'ingrédient n'a été détecté, on passe à la cuisson et miam !
     if (tout_est_ok) {
         console.log(_labels[lang].cuisson);
         console.log(_labels[lang].miam);
@@ -160,5 +160,5 @@ function faire_des_crepes() {
     return false;
 }
 
-//~ Let's go !
+// Let's go !
 faire_des_crepes();
