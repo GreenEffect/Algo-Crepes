@@ -11,7 +11,7 @@ Un projet pédagogique pour expliquer la programmation aux non-développeurs à 
 
 ## 📖 Principes
 
-A partir d'une [docs/Contexte.pdf](recette de pâte à crêpes), création d'un [src/algo-crepes-original.js](fichier Javascript basique) avec [docs/demo.mp4](enregistrement vidéo) en accéléré pour visualiser en quoi consiste le développement.
+A partir d'une [./docs/Contexte.pdf](recette de pâte à crêpes), création d'un [./src/algo-crepes-original.js](fichier Javascript basique) avec [./docs/demo.mp4](enregistrement vidéo) en accéléré pour visualiser en quoi consiste le développement.
 
 <img src="./docs/demo.gif" alt="Démonstration de la création du fichier Javascript de Crêpes" />
 
