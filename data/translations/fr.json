@@ -1,4 +1,4 @@
-{
+﻿{
   "language": "Français",
   "messages": {
     "miam": "À table !",
@@ -6,7 +6,7 @@
     "cuisson": "On fait cuire les crêpes.",
     "trop": "(Vous en avez mis ## en trop)",
     "pas_assez": "(Il vous en manque ##)",
-    "pbs_oeuf": "Problème de quantité d'œufs, pas de crêpes !",
+    "pbs_oeuf": "Problème de quantité d’œufs, pas de crêpes !",
     "pbs_lait": "Problème de quantité de lait, pas de crêpes !",
     "pbs_farine": "Problème de quantité de farine, pas de crêpes !",
     "pbs_sel": "Problème de quantité de sel ! On croise les doigts pour que ce ne soit pas trop beurk !",

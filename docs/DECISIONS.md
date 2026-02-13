@@ -1,4 +1,4 @@
-# 📌 Décisions techniques
+﻿# 📌 Décisions techniques
 
 ## JavaScript natif
 

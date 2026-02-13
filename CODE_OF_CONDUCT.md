@@ -1,4 +1,4 @@
-# Code de conduite
+﻿# Code de conduite
 
 Nous voulons un environnement bienveillant, pédagogique et inclusif.
 
