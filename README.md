@@ -261,11 +261,11 @@ Les contributions sont bienvenues !
 
 ## 📄 Licence
 
-Creative Commons BY NC SA - voir [LICENSE.md](LICENSE)
+Creative Commons BY NC SA - voir [LICENSE.md](LICENSE.md)
 
 ## 🩼 AI
 
-Utilisation de [https://claude.ai/](ClaudeAI) pour la génération du fichier `index.html` de démo
+Utilisation de [ClaudeAI](https://claude.ai/) pour la génération du fichier `index.html` de démo
 
 ## 🆘 Support
 
