@@ -9,6 +9,12 @@
 
 Un projet pédagogique pour expliquer la programmation aux non-développeurs à travers une recette de crêpes.
 
+## 📖 Principes
+
+A partir d'une [recette de pâte à crêpes](./docs/Contexte.pdf), création d'un [fichier Javascript basique](./src/algo-crepes-original.js) avec [enregistrement vidéo](./docs/demo.mp4) en accéléré pour visualiser en quoi consiste le développement.
+
+<img src="./docs/demo.gif" alt="Démonstration de la création du fichier Javascript de Crêpes" />
+
 **100% JavaScript** - Aucun PHP, juste du JS pur et une interface HTML pour la démo !
 
 ## 🎯 Philosophie du Projet
@@ -47,7 +53,7 @@ algo-crepes/
 │   └── CONCEPTS.md               # Concepts pédagogiques
 │
 ├── README.md                   # Ce fichier
-├── LICENSE                     # Licence MIT
+├── LICENSE                     # Licence
 └── .gitignore                  # Fichiers à ignorer
 ```
 
@@ -66,7 +72,7 @@ http://votre-domaine.com/algo-crepes/demo/
 
 **C'est tout !** Pas de configuration, pas de commande, ça marche directement.
 
-## 💻 Utiliser le Code JavaScript
+## 💻 Utiliser le code JavaScript
 
 ### Dans une page HTML
 
@@ -120,7 +126,7 @@ await recipe.loadTranslations('fr');
 recipe.makeCrepes();
 ```
 
-## 🎓 Concepts Pédagogiques Illustrés
+## 🎓 Concepts pédagogiques illustrés
 
 ### 1. Variables et Types
 ```javascript
@@ -162,7 +168,7 @@ class CrepesRecipe {
 }
 ```
 
-### 6. Programmation Asynchrone
+### 6. Programmation asynchrone
 ```javascript
 async loadTranslations(lang) {
     const response = await fetch(`data/translations/${lang}.json`);
@@ -170,7 +176,7 @@ async loadTranslations(lang) {
 }
 ```
 
-## 🌍 Support Multilingue
+## 🌍 Support multilingue
 
 Le projet supporte :
 - 🇫🇷 Français
@@ -192,7 +198,7 @@ Le projet supporte :
 new CrepesRecipe(lang = 'fr')
 ```
 
-#### Méthodes Principales
+#### Méthodes principales
 ```javascript
 // Charger les traductions
 await recipe.loadTranslations('fr')
@@ -255,7 +261,11 @@ Les contributions sont bienvenues !
 
 ## 📄 Licence
 
-MIT License - voir [LICENSE](LICENSE)
+Creative Commons BY NC SA - voir [LICENSE.md](LICENSE.md)
+
+## 🩼 AI
+
+Utilisation de [ClaudeAI](https://claude.ai/) pour la génération du fichier `index.html` de démo
 
 ## 🆘 Support
 
