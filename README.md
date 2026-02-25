@@ -48,12 +48,22 @@ algo-crepes/
 │       └── en.json                # Traductions anglaises
 │
 ├── docs/                       # Documentation
-│   ├── Contexte.pdf            # Spécifications originales
-│   ├── demo.mp4                  # Vidéo de codage
-│   └── CONCEPTS.md               # Concepts pédagogiques
+│   ├── ALGO.md                    # Concepts algorithmiques entre contexte et code               
+│   ├── ARCHITECTURE.md            # Architecture d'ensemble
+│   ├── Contexte.pdf               # Spécifications originales
+│   ├── DECISIONS.md               # Présentation des choix techniques
+│   ├── demo.gif                   # Gif de codage pour intégration dans README.md
+│   ├── demo.mp4                   # Vidéo de codage, équivalent de demo.gif
+│   ├── FAQ.md                     # FAQ basique
+│   ├── PEDAGOGIE.md               # Concepts pédagogiques
+│   └── ROADMAP.md                 # Evolutions potentielles du projet
 │
 ├── README.md                   # Ce fichier
-├── LICENSE                     # Licence
+├── index.html                  # Fichier HTML de présentation pédagogique
+├── CODE_OF_CONDUCT.md          # Code de conduite pour participer au développement
+├── CONTRIBUTING.md             # Définition des contributions acceptées
+├── LICENSE.md                  # Licence
+├── SECURITY.md                 # Politique de sécurité
 └── .gitignore                  # Fichiers à ignorer
 ```
 
